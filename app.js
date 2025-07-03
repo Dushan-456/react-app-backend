@@ -2,13 +2,12 @@
 //pass = 9YNvLzsgDODwzRCQ
 const express = require("express");
 const mongoose = require("mongoose");
+const router = require("./Routes/UserRoutes");
 
 const app = express();
 
 // Middleware
-app.use("/",(req,res, next) => {
-        res.send("Its Working");
-})
+app.use("/users",router)
 
 
 mongoose.connect("mongodb+srv://admin:9YNvLzsgDODwzRCQ@cluster0.4l8hnzf.mongodb.net/")
