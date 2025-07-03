@@ -10,7 +10,7 @@ const userSchema = new Schema({
         gmail:{
             type:String,  // data Type
             required:true, // Validate
-        },  
+        },          
         age:{
             type:Number,  // data Type
             required:true, // Validate
