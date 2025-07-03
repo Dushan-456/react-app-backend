@@ -7,6 +7,7 @@ const router = require("./Routes/UserRoutes");
 const app = express();
 
 // Middleware
+app.use(express.json());
 app.use("/users",router)
 
 
